@@ -52,8 +52,8 @@ Stránka má tři responzivní varianty, říkejme jim zjednodušeně *mobil*, *
   - mobil: `3.5rem`
   - tablet: `4rem`
   - desktop: `5rem`
-- tloušťka písma `400`
-- výška řádku `1`
+- tloušťka písma `400` nastavené
+- výška řádku `1` nastavené
 
 #### Nadpisy h2
 
@@ -62,15 +62,15 @@ Stránka má tři responzivní varianty, říkejme jim zjednodušeně *mobil*, *
   - mobil: `2.5rem`
   - tablet: `3rem`
   - desktop: `3.5rem`
-- tloušťka písma `500`
-- výška řádku `1.2`
+- tloušťka písma `500` nastavené
+- výška řádku `1.2` nastavené
 
 #### Nadpisy h3
 
 - písmo **DM Sans**
-- velikost písma `1.5rem`
-- tloušťka písma `600`
-- výška řádku `1.2`
+- velikost písma `1.5rem` nastavené
+- tloušťka písma `600` nastavené
+- výška řádku `1.2` nastavené
 
 
 ### Sekce
@@ -131,14 +131,14 @@ Tlačítko se chová také responzivně, mění se mu velikost písma a padding.
 
 **Položky menu (odkazy)**:
 - **Na mobilu:**
-  - `display: inline-block;` aby jim šel nastavit padding
+  - `display: inline-block;` aby jim šel nastavit padding nastavené
   - padding nahoře a dole `10px`, vlevo a vpravo `15px`
-  - velikost písma `1.25rem`
-  - tloušťka písma `500`
-  - písmo není podtržené
-  - barva textu `--color-secondary-dark`
+  - velikost písma `1.25rem` nastavené
+  - tloušťka písma `500` nastavené
+  - písmo není podtržené nastavené
+  - barva textu `--color-secondary-dark` nastavené
   - border radius `100vw` (aby bylo tlačítko na koncích kompletně kulaté)
-  - při najetí myší (nebo klávesnicí) se barva pozadí nastaví na `--color-secondary-bright`
+  - při najetí myší (nebo klávesnicí) se barva pozadí nastaví na `--color-secondary-bright` nastavené
 - **Na tabletu:**
   - padding se změní na `10px` nahoře a dole, `20px` vlevo a vpravo
 - **Na desktopu:**
@@ -220,10 +220,10 @@ Pro obrázek s jídlem přidej element `<picture>` a zajisti, aby:
 
 ## Patička
 
-- pozadí patičky `--color-footer-bg`
-- barva textu `--color-secondary-light`
-- barva odkazů v patičce `--color-secondary-bright`
-- výška loga `40px`
+- pozadí patičky `--color-footer-bg` nastavené
+- barva textu `--color-secondary-light` nastavené
+- barva odkazů v patičce `--color-secondary-bright` nastavené
+- výška loga `40px` nastavené
 - patička je rozdělená na dvě poloviny:
   - logo a adresa
   - menu a copyright

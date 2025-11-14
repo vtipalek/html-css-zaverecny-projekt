@@ -14,3 +14,71 @@ html { box-sizing: border-box; }
 
   --radius: 12px;
 }
+
+/*#### Nadpisy h3
+
+- písmo **DM Sans**
+- velikost písma `1.5rem`
+- tloušťka písma `600`
+- výška řádku `1.2`*/
+
+h1 {
+  font-weight: 400;
+  line-height: 1;
+}
+
+h2 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+nav > a {
+  color: var(--color-secondary-dark);
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+nav > a:hover {
+  color: var(--color-secondary-bright);
+}
+
+.hero {
+  background: url('images/hero.jpg') no-repeat;
+}
+
+/*
+- pozadí patičky `--color-footer-bg` OK
+- barva textu `--color-secondary-light` OK
+- barva odkazů v patičce `--color-secondary-bright` OK
+- výška loga `40px`
+- patička je rozdělená na dvě poloviny:
+  - logo a adresa
+  - menu a copyright
+- **na mobilu** jsou obě poloviny pod sebou
+- **od tabletu** a výše jsou obě poloviny vedle sebe na opačných koncích patičky
+- když jsou prvky nad sebou, je mezi nimi rozestup `20px`
+*/
+
+footer {
+  background: var(--color-footer-bg);
+  color: var(--color-secondary-light);
+}
+
+.logo-footer {
+  height: 40px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul a {
+  color: var(--color-secondary-bright)
+}
