@@ -105,15 +105,15 @@ Container přidej vždy do každé sekce takto:
 Tlačítko se chová také responzivně, mění se mu velikost písma a padding.
 
 - **Na mobilu:**
-  - `display: inline-block;`, aby šel tlačítku nastavit padding
-  - padding nahoře a dole `15px`, vpravo a vlevo `30px`
-  - velikost písma `1rem`
-  - tloušťka písma `600`
-  - písmo je nepodtržené
-  - barva textu bílá
-  - barva pozadí `--color-primary`
-  - při najetí myší (nebo klávesnicí) se barva pozadí změní na `--color-primary-dark`
-  - border radius `100vw` (tlačítko bude na koncích vždy perfektně kulaté, nezávisle na tom, jak bude velké)
+  - `display: inline-block;`, aby šel tlačítku nastavit padding nastavené
+  - padding nahoře a dole `15px`, vpravo a vlevo `30px` nastavené
+  - velikost písma `1rem` nastavené
+  - tloušťka písma `600` nastavené
+  - písmo je nepodtržené nastavené
+  - barva textu bílá nastavené
+  - barva pozadí `--color-primary` nastavené
+  - při najetí myší (nebo klávesnicí) se barva pozadí změní na `--color-primary-dark` nastavené
+  - border radius `100vw` (tlačítko bude na koncích vždy perfektně kulaté, nezávisle na tom, jak bude velké) nastavené
 - **Od tabletu** výše:
   - padding se změní na `20px` nahoře a dole, `40px` vpravo a vlevo
   - velikost písma se změní na `1.125rem`
@@ -174,11 +174,11 @@ Na mobilu jsou logo a menu **pod sebou**, od tabletu výše jsou **vedle sebe**,
 - mezi kartičkami je rozestup `30px`
 - kartička má padding nahoře a dole `30px`, vpravo a vlevo `20px`
 - vycentrovaný text
-- rámeček `1px` barvou `--color-secondary-bright`
-- zakulacení rohů velikosti `--radius`
+- rámeček `1px` barvou `--color-secondary-bright` nastavené
+- zakulacení rohů velikosti `--radius` nastavené
 - **ikona** uvnitř kartičky má velikost `40px` x `40px`
 - **nadpis** v kartičce je barvou `--color-secondary`
-- **odkaz** na spodku kartičky je barvou `--color-primary`, je nepodtržený, ale podtrhne se při najetí myší (nebo klávesnicí)
+- **odkaz** na spodku kartičky je barvou `--color-primary`, je nepodtržený, ale podtrhne se při najetí myší (nebo klávesnicí) nastavené
 - vertikální rozestup mezi prvky v kartičce je `20px`
 
 ![Jídelní lístek](assets/jidelni-listek.png)
@@ -199,7 +199,7 @@ Na mobilu jsou logo a menu **pod sebou**, od tabletu výše jsou **vedle sebe**,
 
 Sekce je rozdělená na dvě poloviny, které jsou na mobilu pod sebou, na tabletu a desktopu vedle sebe a jsou stejně široké. Když jsou sloupce vedle sebe, je mezi nimi rozestup `60px`.
 
-Sekce má barvu pozadí `--color-section-bg`.
+Sekce má barvu pozadí `--color-section-bg`. nastavené
 
 ⚠️ **Pozor:**
 Pro obrázek s jídlem přidej element `<picture>` a zajisti, aby:
@@ -209,11 +209,11 @@ Pro obrázek s jídlem přidej element `<picture>` a zajisti, aby:
 ![Picture](assets/picture.png)
 
 - mezi prvky vedle obrázku jsou rozestupy `40px`
-- **ikony** jsou velké `40px` x `40px`
+- **ikony** jsou velké `40px` x `40px` nastavené
 - **text vedle ikon** má:
-  - velikost `1.25rem`
-  - tloušťku písma `500`
-  - barvu `--color-secondary-dark`
+  - velikost `1.25rem` nastavené
+  - tloušťku písma `500` nastavené
+  - barvu `--color-secondary-dark` nastavené
 
 ![Rozvoz jídla](assets/rozvoz.png)
 
@@ -225,11 +225,11 @@ Pro obrázek s jídlem přidej element `<picture>` a zajisti, aby:
 - barva odkazů v patičce `--color-secondary-bright` nastavené
 - výška loga `40px` nastavené
 - patička je rozdělená na dvě poloviny:
-  - logo a adresa
-  - menu a copyright
+  - logo a adresa nastavené /časom možno iná trieda/
+  - menu a copyright nastavené /časom možno iná trieda/
 - **na mobilu** jsou obě poloviny pod sebou
 - **od tabletu** a výše jsou obě poloviny vedle sebe na opačných koncích patičky
-- když jsou prvky nad sebou, je mezi nimi rozestup `20px`
+- když jsou prvky nad sebou, je mezi nimi rozestup `20px` nastavené
 
 ![Patička](assets/paticka.png)
 
