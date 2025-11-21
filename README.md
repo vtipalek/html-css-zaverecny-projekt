@@ -41,27 +41,27 @@ Stránka má tři responzivní varianty, říkejme jim zjednodušeně *mobil*, *
 #### Základní text pro celou stránku (nastavený na body)
 
 - písmo **DM Sans**
-- velikost písma: `1.125rem`
-- výška řádku `1.4`
-- barva `--color-text`
+- velikost písma: `1.125rem` nastavené
+- výška řádku `1.4` nastavené
+- barva `--color-text` nastavené
 
 #### Nadpis h1
 
 - písmo **Playfair Display**
-- velikost písma:
-  - mobil: `3.5rem`
-  - tablet: `4rem`
-  - desktop: `5rem`
+- velikost písma: -
+  - mobil: `3.5rem` nastavené
+  - tablet: `4rem` nastavené
+  - desktop: `5rem` nastavené
 - tloušťka písma `400` nastavené
 - výška řádku `1` nastavené
 
 #### Nadpisy h2
 
 - písmo **Playfair Display**
-- velikost písma:
-  - mobil: `2.5rem`
-  - tablet: `3rem`
-  - desktop: `3.5rem`
+- velikost písma: -
+  - mobil: `2.5rem` nastavené
+  - tablet: `3rem` nastavené
+  - desktop: `3.5rem` nastavené
 - tloušťka písma `500` nastavené
 - výška řádku `1.2` nastavené
 
@@ -73,18 +73,18 @@ Stránka má tři responzivní varianty, říkejme jim zjednodušeně *mobil*, *
 - výška řádku `1.2` nastavené
 
 
-### Sekce
+### Sekce -
 
-Následující platí obecně pro **sekce** a **patičku** stránky.
+Následující platí obecně pro **sekce** a **patičku** stránky. nastavené
 
-- padding nahoře a dole `50px`
-- od tabletu dál se padding zvětší na `80px`
+- padding nahoře a dole `50px` nastavené
+- od tabletu dál se padding zvětší na `80px` nastavené
 
-### Container
+### Container -
 
-Obsah jednotlivých sekcí (včetně hlavičky a patičky) je zůžený do pruhu s nastavenou maximální šířkou, který je vycentrovaný uprostřed stránky.
+Obsah jednotlivých sekcí (včetně hlavičky a patičky) je zůžený do pruhu s nastavenou maximální šířkou, který je vycentrovaný uprostřed stránky. nastavené
 
-Container přidej vždy do každé sekce takto:
+Container přidej vždy do každé sekce takto: nastavené
 ```html
 <section>
   <div class="container">
@@ -93,18 +93,18 @@ Container přidej vždy do každé sekce takto:
 </section>
 ```
 
-- **Na mobilu:**
-  - maximální šířka `540px`
-  - vycentrován horizontálně uprostřed stránky
-  - padding vpravo a vlevo `20px`
-- **Od tabletu** a výše:
-  - nastavená maximální šířka se změní na `1100px`
+- **Na mobilu:** -
+  - maximální šířka `540px` nastavené
+  - vycentrován horizontálně uprostřed stránky nastavené
+  - padding vpravo a vlevo `20px` nastavené
+- **Od tabletu** a výše: -
+  - nastavená maximální šířka se změní na `1100px` nastavené
 
-### Tlačítko
+### Tlačítko -
 
-Tlačítko se chová také responzivně, mění se mu velikost písma a padding.
+Tlačítko se chová také responzivně, mění se mu velikost písma a padding. nastavené
 
-- **Na mobilu:**
+- **Na mobilu:** -
   - `display: inline-block;`, aby šel tlačítku nastavit padding nastavené
   - padding nahoře a dole `15px`, vpravo a vlevo `30px` nastavené
   - velikost písma `1rem` nastavené
@@ -114,82 +114,82 @@ Tlačítko se chová také responzivně, mění se mu velikost písma a padding.
   - barva pozadí `--color-primary` nastavené
   - při najetí myší (nebo klávesnicí) se barva pozadí změní na `--color-primary-dark` nastavené
   - border radius `100vw` (tlačítko bude na koncích vždy perfektně kulaté, nezávisle na tom, jak bude velké) nastavené
-- **Od tabletu** výše:
-  - padding se změní na `20px` nahoře a dole, `40px` vpravo a vlevo
-  - velikost písma se změní na `1.125rem`
+- **Od tabletu** výše: -
+  - padding se změní na `20px` nahoře a dole, `40px` vpravo a vlevo nastavené
+  - velikost písma se změní na `1.125rem` nastavené
 
 ![Tlačítko](assets/tlacitko.png)
 
 
-## Hlavička stránky
+## Hlavička stránky - ALE VYRIEŠIŤ MARGIN
 
-- celá hlavička má padding nahoře a dole `20px`
+- celá hlavička má padding nahoře a dole `20px` nastavené ALE VYRIEŠIŤ MARGIN
 
-**Logo**:
-- na mobilu má výšku `35px`
-- na desktopu má výšku `45px`
+**Logo**: -
+- na mobilu má výšku `35px` nastavené
+- na desktopu má výšku `45px` nastavené
 
-**Položky menu (odkazy)**:
-- **Na mobilu:**
+**Položky menu (odkazy)**: -
+- **Na mobilu:** -
   - `display: inline-block;` aby jim šel nastavit padding nastavené
-  - padding nahoře a dole `10px`, vlevo a vpravo `15px`
+  - padding nahoře a dole `10px`, vlevo a vpravo `15px` nastavené
   - velikost písma `1.25rem` nastavené
   - tloušťka písma `500` nastavené
   - písmo není podtržené nastavené
   - barva textu `--color-secondary-dark` nastavené
-  - border radius `100vw` (aby bylo tlačítko na koncích kompletně kulaté)
+  - border radius `100vw` (aby bylo tlačítko na koncích kompletně kulaté) nastavené
   - při najetí myší (nebo klávesnicí) se barva pozadí nastaví na `--color-secondary-bright` nastavené
-- **Na tabletu:**
-  - padding se změní na `10px` nahoře a dole, `20px` vlevo a vpravo
-- **Na desktopu:**
-  - padding se změní na `15px` nahoře a dole, `30px` vlevo a vpravo
+- **Na tabletu:** -
+  - padding se změní na `10px` nahoře a dole, `20px` vlevo a vpravo nastavené
+- **Na desktopu:** -
+  - padding se změní na `15px` nahoře a dole, `30px` vlevo a vpravo nastavené
 
 ![Menu](assets/menu.png)
 
-Na mobilu jsou logo a menu **pod sebou**, od tabletu výše jsou **vedle sebe**, logo úplně vlevo, menu úplně vpravo.
+Na mobilu jsou logo a menu **pod sebou**, od tabletu výše jsou **vedle sebe**, logo úplně vlevo, menu úplně vpravo. nastavené
 
 
 ## Hero banner
 
-- obrázek na pozadí kompletně pokrývá plochu banneru
+- obrázek na pozadí kompletně pokrývá plochu banneru nastavené
 - sekce s bannerem má padding nahoře a dole:
   - **na mobilu** `100px`
   - **na tabletu** `120px`
   - **na desktopu** `150px`
-- mezi nadpisem a textem, a mezi textem a tlačítkem je rozestup `30px`
-- text mezi nadpisem a tlačítkem:
-  - **na mobilu** velikost textu `1.125rem`
-  - **od tabletu** výše je velikost textu `1.25rem`
+- mezi nadpisem a textem, a mezi textem a tlačítkem je rozestup `30px` nastavené
+- text mezi nadpisem a tlačítkem: -
+  - **na mobilu** velikost textu `1.125rem` nastavené
+  - **od tabletu** výše je velikost textu `1.25rem` nastavené
 
 ![Hero banner](assets/hero.png)
 
 
-## Sekce: Jídelní lístek
+## Sekce: Jídelní lístek -
 
-- mezi nadpisem a kartičkami je rozestup `40px`
-- kartičky jsou:
-  - **na mobilu** pod sebou
-  - **na tabletu** 2 vedle sebe a pod nimi další 2 (nápověda viz dále)
-  - **na desktopu** všechny 4 kartičky vedle sebe
-- mezi kartičkami je rozestup `30px`
-- kartička má padding nahoře a dole `30px`, vpravo a vlevo `20px`
-- vycentrovaný text
+- mezi nadpisem a kartičkami je rozestup `40px` nastavené
+- kartičky jsou: -
+  - **na mobilu** pod sebou nastavené
+  - **na tabletu** 2 vedle sebe a pod nimi další 2 (nápověda viz dále) nastavené
+  - **na desktopu** všechny 4 kartičky vedle sebe nastavené
+- mezi kartičkami je rozestup `30px` nastavené
+- kartička má padding nahoře a dole `30px`, vpravo a vlevo `20px` nastavené
+- vycentrovaný text nastavené
 - rámeček `1px` barvou `--color-secondary-bright` nastavené
 - zakulacení rohů velikosti `--radius` nastavené
-- **ikona** uvnitř kartičky má velikost `40px` x `40px`
-- **nadpis** v kartičce je barvou `--color-secondary`
+- **ikona** uvnitř kartičky má velikost `40px` x `40px` nastavené
+- **nadpis** v kartičce je barvou `--color-secondary` nastavené
 - **odkaz** na spodku kartičky je barvou `--color-primary`, je nepodtržený, ale podtrhne se při najetí myší (nebo klávesnicí) nastavené
-- vertikální rozestup mezi prvky v kartičce je `20px`
+- vertikální rozestup mezi prvky v kartičce je `20px` nastavené
 
 ![Jídelní lístek](assets/jidelni-listek.png)
 
 ### Nápověda pro rozložení kartiček na tabletu:
 
-- kartičky dej do flexboxu
-- na flexboxu zapni zalamování pomocí `flex-wrap: wrap;`
-- to znamená, že když se prvky do flexboxu nevejdou, na konci řádku se zalomí a budou pokračovat na dalším řádku - tak uděláš 2 řady kartiček
-- kartičkám musíš nastavit správnou šířku tak, aby se přesně vešly a zalomily se tam, kde potřebuješ
-- musíš počítat i s mezerou mezi kartičkami, takže když chceš dvě kartičky vedle sebe, musí být šířka kartičky `(100% - 30px) / 2` - použij `calc()`
+- kartičky dej do flexboxu nastavené
+- na flexboxu zapni zalamování pomocí `flex-wrap: wrap;` nastavené
+- to znamená, že když se prvky do flexboxu nevejdou, na konci řádku se zalomí a budou pokračovat na dalším řádku - tak uděláš 2 řady kartiček nastavené
+- kartičkám musíš nastavit správnou šířku tak, aby se přesně vešly a zalomily se tam, kde potřebuješ nastavené
+- musíš počítat i s mezerou mezi kartičkami, takže když chceš dvě kartičky vedle sebe, musí být šířka kartičky `(100% - 30px) / 2` - použij `calc()` nastavené
 - nezapomeň na desktopové variantě zalamování ve flexboxu zase vypnout pomocí `flex-wrap: nowrap;` a nastavit kartičky na správnou šířku, aby se vešly čtyři vedle sebe
 
 ![Jídelní lístek na tabletu](assets/jidelni-listek-tablet.png)
@@ -197,20 +197,20 @@ Na mobilu jsou logo a menu **pod sebou**, od tabletu výše jsou **vedle sebe**,
 
 ## Sekce: Rozvoz jídla
 
-Sekce je rozdělená na dvě poloviny, které jsou na mobilu pod sebou, na tabletu a desktopu vedle sebe a jsou stejně široké. Když jsou sloupce vedle sebe, je mezi nimi rozestup `60px`.
+Sekce je rozdělená na dvě poloviny, které jsou na mobilu pod sebou, na tabletu a desktopu vedle sebe a jsou stejně široké. Když jsou sloupce vedle sebe, je mezi nimi rozestup `60px`. NASTAVIT
 
 Sekce má barvu pozadí `--color-section-bg`. nastavené
 
-⚠️ **Pozor:**
-Pro obrázek s jídlem přidej element `<picture>` a zajisti, aby:
-- **na mobilu** se zobrazoval široký obrázek *rozvoz-na-sirku.jpg*
-- **od tabletu** výše se zobrazoval vysoký obrázek *rozvoz-na-vysku.jpg*
+⚠️ **Pozor:** NASTAVIT
+Pro obrázek s jídlem přidej element `<picture>` a zajisti, aby: -
+- **na mobilu** se zobrazoval široký obrázek *rozvoz-na-sirku.jpg* nastavené
+- **od tabletu** výše se zobrazoval vysoký obrázek *rozvoz-na-vysku.jpg* nastavené
 
 ![Picture](assets/picture.png)
 
-- mezi prvky vedle obrázku jsou rozestupy `40px`
+- mezi prvky vedle obrázku jsou rozestupy `40px` NASTAVIT
 - **ikony** jsou velké `40px` x `40px` nastavené
-- **text vedle ikon** má:
+- **text vedle ikon** má: -
   - velikost `1.25rem` nastavené
   - tloušťku písma `500` nastavené
   - barvu `--color-secondary-dark` nastavené
@@ -218,17 +218,17 @@ Pro obrázek s jídlem přidej element `<picture>` a zajisti, aby:
 ![Rozvoz jídla](assets/rozvoz.png)
 
 
-## Patička
+## Patička - ? ALE ASI INÁ TRIEDA NA LOGO A MENU
 
 - pozadí patičky `--color-footer-bg` nastavené
 - barva textu `--color-secondary-light` nastavené
 - barva odkazů v patičce `--color-secondary-bright` nastavené
 - výška loga `40px` nastavené
-- patička je rozdělená na dvě poloviny:
+- patička je rozdělená na dvě poloviny: -
   - logo a adresa nastavené /časom možno iná trieda/
   - menu a copyright nastavené /časom možno iná trieda/
-- **na mobilu** jsou obě poloviny pod sebou
-- **od tabletu** a výše jsou obě poloviny vedle sebe na opačných koncích patičky
+- **na mobilu** jsou obě poloviny pod sebou nastavené
+- **od tabletu** a výše jsou obě poloviny vedle sebe na opačných koncích patičky nastavené
 - když jsou prvky nad sebou, je mezi nimi rozestup `20px` nastavené
 
 ![Patička](assets/paticka.png)

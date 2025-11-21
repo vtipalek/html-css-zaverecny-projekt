@@ -15,16 +15,20 @@ html { box-sizing: border-box; }
   --radius: 12px;
 }
 
-.header {
-  padding: 300px;
+body {
+  color: var(--color-text);
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
 
 h1 {
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 1;
 }
 
 h2 {
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -35,33 +39,87 @@ h3 {
   line-height: 1.2;
 }
 
+.container {
+  max-width: 540px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+header {
+  padding: 20px 0;
+  text-align: center;
+}
+
 nav > a {
+  border-radius: 100vw;
   color: var(--color-secondary-dark);
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 500;
+  padding: 10px 15px;
   text-decoration: none;
 }
 
 nav > a:hover {
-  color: var(--color-secondary-bright);
+  background: var(--color-secondary-bright);
+}
+
+.logo-header {
+  height: 35px;
 }
 
 .hero {
-  background: url('images/hero.jpg') no-repeat;
+  background: url('images/hero.jpg') no-repeat center/cover;
+  text-align: center;
+}
+
+.hero > h1 {
+  margin-bottom: 30px;
+}
+
+.hero > p {
+  margin-bottom: 30px;
+}
+
+.menu-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
   border: 1px var(--color-secondary-bright) solid;
   border-radius: var(--radius);
+  flex-grow: 1;
+  padding: 30px 20px;
+  text-align: center;
  }
+
+.card > img {
+  margin-bottom: 20px;
+}
 
 .card > h3 {
   color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+.card > p {
+  margin-bottom: 20px;
 }
 
 .card > a {
   color: var(--color-primary);
+  margin-bottom: 20px;
   text-decoration: none;
  }
 
@@ -73,23 +131,45 @@ nav > a:hover {
   background: var(--color-section-bg);
 }
 
-.delivery > ul {
+.delivery > picture, img {
+  border-radius: var(--radius);
+  max-width: 100%;
+}
+
+.ul-delivery {
   font-weight: 500;
   color: var(--color-secondary-dark);
   line-height: 1.25rem;
   list-style-type: none;
 }
 
+.ul-delivery {
+  padding: 0px;
+}
+
+/*text-decoration: none; na viacerych miestach nav > a     .card > a
+list-style-type: none; tiež
+*/
+
+
+
+/*.vyhoda {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}*/
+
 footer {
   background: var(--color-footer-bg);
   color: var(--color-secondary-light);
+  padding: 50px;
 }
 
 .footer-address {
   margin-bottom: 20px;
 }
 
-.footer-logo {
+.logo-footer {
   height: 40px;
 }
 
@@ -106,28 +186,6 @@ footer li {
   list-style-type: none;
 }
 
-/* - **tablet** od `768px` a víc
-- **desktop** od `1100px` a víc
-*/
-
-.hero {height: 1280px;}
-
-/*text-decoration: none; na viacerych miestach nav > a     .card > a
-list-style-type: none; tiež
-*/
-
-/*
-@media (min-width: 768px) {
-{}
-}
-*/
-
-.vyhoda {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .button {
   display: inline-block;
   background: var(--color-primary);
@@ -141,4 +199,97 @@ list-style-type: none; tiež
 
 .button:hover {
   background: var(--color-primary-dark);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  section {
+  padding: 80px 0;
+}
+
+  header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  nav > a {
+    padding: 10px 20px;
+  }
+
+  .text-hero {
+    font-size: 1.125rem;
+  }
+
+  .card {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .ul-delivery {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 1rem;
+    gap: 60px;
+    /*flex-shrink: 1;
+    flex-grow: 1;*/
+  }
+
+  .vyhoda {
+    align-items: stretch;
+  }
+
+  /*picture {max-width: 100%;}
+  .t {width: calc(100% / 2); flex-shrink: 1;}*/
+
+
+
+
+  footer > .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+  }
+
+  .button {
+    font-size: 1.125rem;
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .logo-header {
+    height: 45px;
+  }
+
+  nav > a {
+    padding: 10px 20px;
+  }
+
+  .text-hero {
+    font-size: 1.25rem;
+  }
+
+  .cards {
+    flex-wrap: nowrap;
+  }
 }
